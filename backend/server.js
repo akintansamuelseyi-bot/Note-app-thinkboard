@@ -12,6 +12,8 @@ const app = express();
 const __dirname = path.resolve();
 // Middleware-
 // middlewaar comment
+// Middleware-
+// middlewaar comment
 if (process.env.NODE_ENV !== "production") {
   app.use(
     cors({
