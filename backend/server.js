@@ -36,6 +36,13 @@ app.use((req, res, next) => {
 //   next();
 // };
 
+app.get("/", (req, res) => {
+  res.json({
+    success: true,
+    message: "Notes API is running",
+  });
+});
+
 //routes
 app.use("/api/notes", notesRoute);
 app.use("/api/users", usersRoute);
